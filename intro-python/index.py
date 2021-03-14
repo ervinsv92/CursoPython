@@ -44,5 +44,66 @@ lista.append(4)
 
 lista.reverse()
 #lista.sort() #no deja ordenarla porque tiene tipos de datos diferentes
-print(lista)
+#print(lista)
 
+#las tuplas no se pueden cambiar una vez creadas
+tupla = ("hola", "mundo", "somos", "tupla")
+#print(tupla.count("hola"))
+#print(tupla.index("somos"))
+#print(tupla[2])
+
+listaDeTupla = list(tupla)
+listaDeTupla.append("otra tupla")
+#print(listaDeTupla)
+
+rango = range(6)
+#print(rango)
+
+diccionario = {
+    "nombre":"Chanchito feliz",
+    "raza":"persa",
+    "edad":5
+}
+
+#print(diccionario)
+#print(diccionario['nombre'])
+#print(diccionario.get('raza'))
+diccionario['nombre'] = "Fluffy"
+#print(diccionario)
+#print(len(diccionario))
+
+diccionario['ronronea'] = "Si" #sino existe lo agrega al diccionario
+#print(diccionario)
+diccionario.pop('ronronea') #elimina el elemento del diccionario con el nombre espesificado
+#print(diccionario)
+diccionario.popitem() #elimina el ultimo elemento del diccionario
+#print(diccionario)
+del diccionario['raza'] #elimina el elemento del diccionario por llave
+#print(diccionario)
+copiaDiccionario = diccionario.copy()
+copiaDiccionario2 = dict(diccionario) #otra manera de copiar los diccionarios
+#print(copiaDiccionario)
+diccionario.clear() #elimina todos los elementos del diccionario
+#print(diccionario)
+
+floffy = {
+        "nombre":"Floffy",
+        "edad":4
+        }
+
+gatos = {
+    "Floffy":floffy,
+    "Mamba":{
+        "nombre":"Black Mamba",
+        "edad":12
+    }
+}
+
+#print(gatos)
+
+perros = dict(nombre = "chanchito feliz", edad=6) #crea un diccionario
+#print(perros)
+
+verdadero = True
+falso = False
+print(verdadero, falso)
