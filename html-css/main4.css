@@ -1,0 +1,102 @@
+body{
+    background-color: #eee;
+}
+
+p{
+    color: #222fff;
+    text-align: center;
+    text-indent: 40px;/* agrega una sangria a la primera fila de texto */
+    line-height: 1.7; /* Altura de las lineas */
+    word-spacing: 10px;/* Espacio entre las palabras */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-family: "Times New Roman"; /* Cambia el tipo de letra */
+    font-style: italic;
+    font-size: 1.5em;
+    font-weight: bold;/* desde 100 hasta 900, con saltos de 100 en 100 */
+}
+
+a1{/* Ejemplo de los links */
+    /*
+        none //quitar decoracion
+        overline //linea encima de palabra
+        line-through //linea en medio de palabra
+        undeline //linea debajo de palabra
+    */
+    text-decoration: none;
+
+    /*
+        uppercase //Mayusculas
+        lowercase //minusculas
+        capitalize //poner en mayusculas las primeras letras
+    */
+    text-transform: uppercase;
+
+    letter-spacing: 3px;/* Separacion entre las letras */
+    
+}
+
+a{ /* Otro ejemplo de los links*/
+    color: hotpink;
+    background-color: #f00;
+    border:solid 1px #d00;
+    padding: 15px;
+    border-radius: 4px;    
+}
+
+a:link{/* Cuando no ha sido visitado */
+    color: pink;
+    text-decoration: none;
+}
+
+a:visited{/* Cuando fue visitado */
+    color: white;
+}
+
+a:active{/* Cuando se le da clic */
+    color: black;
+}
+
+a:hover{/* Cuando el raton esta encima */
+    color:white;
+    text-decoration: underline;
+    background-color: #f55;
+}
+
+/* Listas no ordenadas */
+ul{
+    background-color: #fff;
+    border: solid 1px #ddd;
+    border-radius: 4px;
+    list-style-type: none; /* Cambia la forma del circulo */
+    padding-left: 0px;
+}
+
+li{
+    border-bottom: solid 1px #ddd;
+    padding: 15px;
+}
+
+table{
+    width: 100%;
+    background-color: white;
+    border-collapse: collapse; /* Quita los bordes de los td */
+}
+
+tr:nth-child(even){/* Solo selecciona los hijos even */
+    background-color: #f2f2f2;
+}
+
+td{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+table th{
+    background-color: #4CAF50;
+    color: white;
+    text-align: left;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
+}

@@ -1,0 +1,50 @@
+body{
+    background-color: #eee;
+}
+
+p1{
+    display: inline;
+}
+
+p1{
+    max-width: 350px;
+    background-color: #f00;
+    margin: auto;
+    position: relative; /* por defecto es static */
+    /* relative, respecto a el mismo, con top, left, right, bottom, se puede mover */
+    /* fixed, deja el contenido fijo en la pantalla */
+}
+
+#invisible{
+    display: none;
+}
+
+#over{
+    width: 100px;
+    height: 100px;
+    overflow: visible; 
+    overflow-y: scroll;
+    /* 
+        visible, por defecto 
+        hidden, solo se ve lo que alcance
+        scroll, agrega el scroll para ver todo el contenido,
+        auto, agrega el scroll solo cuando es necesario
+    */
+}
+
+img{
+    float: left; 
+    /* 
+        left, mueve la imagen a la izquierda,
+        right, mueve la imagen a la derecha
+    */
+    
+}
+
+img:hover{
+    opacity: 0.5;/* de 0 a 1, donde 0 es invisible y 1 es solido */
+}
+
+div p{
+    color: #F00;
+}
